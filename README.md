@@ -8,7 +8,7 @@ Build & run
 
 **Prerequisites:**
 
-* Java 16
+* Java 17
 * Apache Maven (https://maven.apache.org/)
 * RabbitMQ (https://www.rabbitmq.com/)
 
