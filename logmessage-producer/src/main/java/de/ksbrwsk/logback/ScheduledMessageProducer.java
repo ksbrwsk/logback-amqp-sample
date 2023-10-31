@@ -12,8 +12,8 @@ public class ScheduledMessageProducer {
 
     private AtomicLong counter = new AtomicLong(1L);
 
-    @Scheduled(fixedRate = 50)
+    @Scheduled(fixedRate = 500)
     public void createMessage() {
-        log.info("Message No. {}", this.counter.getAndIncrement() );
+        log.info("Message No. {}", this.counter.getAndIncrement());
     }
 }
