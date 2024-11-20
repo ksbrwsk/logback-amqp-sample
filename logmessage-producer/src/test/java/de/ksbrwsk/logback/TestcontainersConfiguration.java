@@ -11,6 +11,8 @@ public class TestcontainersConfiguration {
     @Bean
     @ServiceConnection
     RabbitMQContainer rabbitMQContainer() {
-        return new RabbitMQContainer("rabbitmq:4.0.3-alpine");
+        var container = new RabbitMQContainer("rabbitmq:4.0.3-alpine");
+        container.start();
+        return container;
     }
 }
